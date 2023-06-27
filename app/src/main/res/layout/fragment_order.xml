@@ -5,253 +5,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.OrderFragment.view.FragmentOrder" >
+    tools:context=".ui.OrderFragment.view.FragmentOrder">
 
     <LinearLayout
-        android:id="@+id/fo_ll_total"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:elevation="20dp"
-        android:background="@drawable/grid_total_amount"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/fo_btn_confirm">
-
-        <LinearLayout
-            android:id="@+id/fo_ll_peso"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center">
-
-            <TextView
-                android:id="@+id/tvTotalLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Total ($AR): "
-                android:fontFamily="casual"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/tvTotalAmount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="casual"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:text="475 Pesos" />
-        </LinearLayout>
-
-
-        <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@color/black"
-            />
-
-        <LinearLayout
-            android:id="@+id/fo_ll_dolares"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:orientation="vertical"
-            android:gravity="center">
-
-            <LinearLayout
-                android:id="@+id/fo_ll_dolar_header"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:orientation="horizontal"
-                android:gravity="center">
-
-                <LinearLayout
-                    android:id="@+id/fo_ll_official_dolar"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:orientation="vertical"
-                    android:gravity="center">
-
-                    <TextView
-                        android:id="@+id/fo_tv_total_moneda_empty"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@color/black" />
-
-                    <TextView
-                        android:id="@+id/fo_tv_total_"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Oficial"
-                        android:fontFamily="casual"
-                        android:layout_weight="1"
-                        android:textSize="18sp"
-                        android:textStyle="bold"/>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@color/black" />
-
-                    <TextView
-                        android:id="@+id/tvTotalLabelDol3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Blue"
-                        android:textColor="@android:color/holo_blue_dark"
-                        android:fontFamily="casual"
-                        android:layout_weight="1"
-                        android:textSize="18sp"
-                        android:textStyle="bold"/>
-
-                </LinearLayout>
-
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:background="@color/black" />
-
-                <LinearLayout
-                    android:id="@+id/fo_ll_official_dolar9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:orientation="vertical"
-                    android:gravity="center">
-
-                    <TextView
-                        android:id="@+id/fo_tv_total_moneda_usd"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="USD"
-                        android:fontFamily="casual"
-                        android:textAlignment="center"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@color/black" />
-
-                    <TextView
-                        android:id="@+id/tvTotalAmountUSD5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="18sp"
-                        android:fontFamily="casual"
-                        android:layout_weight="1"
-                        android:text="1.88" />
-
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@color/black" />
-
-                    <TextView
-                        android:id="@+id/tvTotalAmountUSD678"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="18sp"
-                        android:fontFamily="casual"
-                        android:layout_weight="1"
-                        android:text="1.0" />
-
-                </LinearLayout>
-
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:background="@color/black" />
-
-                <LinearLayout
-                    android:id="@+id/fo_ll_official_dolar4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:orientation="vertical"
-                    android:gravity="center">
-
-                    <TextView
-                        android:id="@+id/fo_tv_total_moneda_uyu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="UYU"
-                        android:fontFamily="casual"
-                        android:textAlignment="center"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@color/black" />
-
-                    <TextView
-                        android:id="@+id/tvTotalAmountUSD556"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="18sp"
-                        android:fontFamily="casual"
-                        android:layout_weight="1"
-                        android:text="252.0" />
-
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@color/black" />
-
-                    <TextView
-                        android:id="@+id/tvTotalAmountUSD67"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="18sp"
-                        android:fontFamily="casual"
-                        android:layout_weight="1"
-                        android:text="39.0" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/fo_btn_confirm"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/fo_txt_confirm_order"
-        android:textColor="@color/white"
-        android:textStyle="bold"
         android:paddingTop="4dp"
-        android:paddingBottom="4dp"
-        android:textSize="20sp"
-        android:textAllCaps="false"
-        android:elevation="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="@drawable/custom_button_1"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="fo_ll_total_grid"
+        android:orientation="vertical"
+        android:background="@drawable/gradient_background">
 
+        <LinearLayout
+            android:id="@+id/fo_ll_total_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:elevation="20dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/grid_total_amount">
+
+            <include
+                android:id="@+id/fo_include_total_grid"
+                layout="@layout/layout_total_grid" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/fo_btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/fo_txt_confirm_order"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginStart="4dp"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:elevation="8dp"
+            android:background="@drawable/custom_button_1" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
