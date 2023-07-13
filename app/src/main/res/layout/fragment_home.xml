@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.HomeFragment.view.FragmentHome" >
+    tools:context=".presentation.ui.HomeFragment.view.FragmentHome" >
 
     <Button
         android:id="@+id/btnNavigateToOrder"
