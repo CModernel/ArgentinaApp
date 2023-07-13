@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.OrderFragment.view.FragmentOrder">
+    tools:context=".presentation.ui.OrderFragment.view.FragmentOrder">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,7 +14,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="fo_ll_total_grid"
         android:orientation="vertical"
         android:background="@drawable/gradient_background">
 

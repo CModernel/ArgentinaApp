@@ -1,18 +1,13 @@
-package com.example.argentinaapp.ui.OrderFragment.view
+package com.example.argentinaapp.presentation.ui.OrderFragment.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
-import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.fragment.findNavController
-import com.example.argentinaapp.R
 import com.example.argentinaapp.databinding.FragmentOrderBinding
-import com.example.argentinaapp.ui.HomeFragment.view.FragmentHome
-import com.example.argentinaapp.ui.OrderFragment.viewmodel.FragmentOrderViewModel
+import com.example.argentinaapp.presentation.ui.OrderFragment.viewmodel.FragmentOrderViewModel
 
 class FragmentOrder : Fragment() {
 
